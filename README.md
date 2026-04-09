@@ -9,6 +9,19 @@ DOI:[10.5281/zenodo.4569575](https://doi.org/10.5281/zenodo.4569575)
 
 Current release: 4.18.0 (2024-05-16)
 
+## 中文项目描述
+
+openMHA（Open Master Hearing Aid）是一个面向助听算法研究与原型验证的开源平台。  
+从工程结构看，本仓库主要由以下几部分组成：
+
+* **核心框架与命令行应用**：位于 `mha/` 目录，提供实时音频处理运行时、插件加载机制和配置驱动的处理流程。
+* **算法插件与处理链能力**：包含校准、波束形成、噪声抑制、动态范围压缩、反馈抑制等助听器关键模块，可按配置文件组合成完整处理链。
+* **工具链与接口**：`mha/tools/` 下提供 Python、Java、Matlab/Octave 相关控制与集成工具，以及打包、拟合规则封装等实用脚本。
+* **示例与参考实现**：`examples/` 与 `reference_algorithms/` 提供可复现实验配置，便于快速上手、复现实验论文并开展二次开发。
+* **第三方依赖封装**：`external_libs/` 收录部分外部库与构建配置，用于支持跨平台构建和特定功能扩展。
+
+整体上，openMHA 的定位是：在“研究可复现性 + 实时处理能力 + 工程可扩展性”之间取得平衡，帮助研究者和开发者以较低成本实现从算法想法到可运行助听原型的落地。
+
 ## Content of the openMHA
 
 The software contains the source code of the openMHA Toolbox library, of the
